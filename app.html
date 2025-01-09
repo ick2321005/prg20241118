@@ -28,13 +28,22 @@
                     電話番号
                     <input type="text">
                 </div>
-         <input type="submit" value="送信" onclick="send()">
+         <input type="submit" value="送信" onclick="ques()">
          </form>
 
                 </div>
                 </fieldset>
 
                 <script>
+
+                    function ques(){
+                        if(window.confirm("申し込みますか？")){
+
+                        }else{
+                            send();
+                        }
+                    }
+
                     function send(){
                         alert("できませんでした")
                     }
